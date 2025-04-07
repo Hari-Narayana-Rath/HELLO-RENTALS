@@ -1,0 +1,290 @@
+/* General Styles */
+body {
+  background-color: black;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(26, 26, 26, 0.9);
+  padding: 1rem 2rem;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(255, 255, 255, 0.1);
+  width: 100%;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 50px;
+  margin-right: 15px;
+  border-radius: 50%;
+  border: 2px solid #e16389;
+}
+
+.title {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 28px;
+}
+
+.navbar-right {
+  display: flex;
+  gap: 15px;
+}
+
+.navbar-right a, .logout-btn {
+  color: #ffffff;
+  text-decoration: none;
+  background-color: #282238;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 12px;
+  min-width: 130px;
+  text-align: center;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.navbar-right a:hover, .logout-btn:hover {
+  background-color: #3b2c4d;
+  transform: scale(1.05);
+}
+
+/* Modal */
+.modal-container {
+  background: #1e1e1e;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 500px;
+  margin: auto;
+  text-align: center;
+}
+
+.modal-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.confirm-btn, .close-btn {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.confirm-btn:hover, .close-btn:hover {
+  opacity: 0.9;
+}
+
+/* Location Input Fields */
+.location-input {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  margin-bottom: 15px;
+}
+
+.location-input input {
+  flex-grow: 1;
+  padding: 10px;
+  border: 1px solid #e16389;
+  border-radius: 5px;
+  background-color: rgba(26, 26, 26, 0.9);
+  color: white;
+  font-size: 16px;
+}
+
+.location-input input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* Buttons inside location inputs */
+.location-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 8px;
+}
+.current-request {
+  max-width: 500px;
+  margin: 50px auto;
+  background: #1a1a1a;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.request-details p {
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+.location-buttons button {
+  flex-grow: 1;
+  background-color: #007bff;
+  border: none;
+  padding: 10px;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.location-buttons .current-location-btn {
+  background-color: #28a745;
+}
+
+.location-buttons button:hover {
+  opacity: 0.9;
+}
+
+/* Dropdown Suggestions */
+.suggestions-list {
+  position: absolute;
+  top: 100%; /* Places it directly below the input */
+  left: 0;
+  width: 100%;
+  background: rgba(26, 26, 26, 1);
+  border: 1px solid #e16389;
+  border-radius: 5px;
+  list-style: none;
+  padding: 5px;
+  max-height: 200px;
+  overflow-y: auto;
+  z-index: 9999; /* Ensures it appears on top */
+  display: block; /* Ensures it is visible */
+}
+
+.suggestions-list li {
+  padding: 10px;
+  cursor: pointer;
+  color: white;
+  background: black;
+  border-bottom: 1px solid #e16389;
+}
+
+.suggestions-list li:hover {
+  background-color: #3b2c4d;
+}
+
+/* Form */
+.form-section {
+  background: #1e1e1e;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 500px;
+  margin: auto;
+}
+
+.form-section h2 {
+  text-align: center;
+  color: #e16389;
+}
+
+.form-section form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.form-section input,
+.form-section select {
+  padding: 10px;
+  border: 1px solid #e16389;
+  border-radius: 5px;
+  background-color: rgba(26, 26, 26, 0.9);
+  color: white;
+  font-size: 16px;
+}
+
+.form-section input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.form-section input[type="submit"] {
+  background-color: #e16389;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.form-section input[type="submit"]:hover {
+  background-color: #d14a78;
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+  .buttons-container {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+
+  .navbar {
+    flex-direction: column;
+    text-align: center;
+    padding: 1rem;
+  }
+
+  .navbar-left {
+    margin-bottom: 10px;
+  }
+
+  .form-section {
+    width: 100%;
+  }
+}
+.map-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.map-container {
+  position: relative;
+  width: 80%;
+  height: 60%;
+  background: white;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.leaflet-map {
+  width: 100%;
+  height: 90%;
+  border-radius: 8px;
+}
+
+.close-map-btn {
+  width: 100%;
+  padding: 10px;
+  background: red;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 5px;
+}

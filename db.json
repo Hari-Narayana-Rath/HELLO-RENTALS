@@ -1,0 +1,42 @@
+{
+  "users": [
+    {
+      "id": "fca8",
+      "name": "raj",
+      "identifier": "uk@gmail.com",
+      "phone": "8763086451",
+      "password": "kuchbhi",
+      "currentRequest": 0
+    },
+    {
+      "id": "4aff",
+      "name": "driverhun",
+      "identifier": "uk.driver@hellor.com",
+      "phone": "8763086451",
+      "password": "driverhun"
+    },
+    {
+      "id": "5001",
+      "name": "happy",
+      "identifier": "uk.admin@hellor.com",
+      "phone": "1234567890",
+      "password": "adminhun"
+    },
+    {
+      "id": "94ec",
+      "name": "badri",
+      "identifier": "uk.provider@hellor.com",
+      "phone": "4444444444",
+      "password": "provhun"
+    },
+    {
+      "id": "f3f8",
+      "name": "christo",
+      "identifier": "happy@gmail.com",
+      "phone": "4444444444",
+      "password": "christo",
+      "currentRequest": 0
+    }
+  ],
+  "requests": []
+}

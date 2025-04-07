@@ -1,0 +1,129 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #0a0a0a;
+    color: #e0e0e0;
+    font-family: 'Inter', sans-serif;
+  }
+  
+  .login-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  /* Increased Container Size */
+  .login-container {
+    display: flex;
+    width: 900px; /* Adjusted size */
+    height: 550px; /* Made it larger */
+    background: #1e1e1e;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+  }
+  
+/* Logo Styling */
+.logo-img {
+    display: block;
+    width: 100px;  /* Adjust size */
+    margin: 0 auto 20px; /* Center it & add spacing */
+    border-radius: 28px;  /* Optional: Rounded corners */
+    transition: transform 0.3s ease-in-out; /* Smooth transition */
+  }
+  
+  /* Logo Hover Effect */
+  .logo-img:hover {
+    transform: scale(1.1); /* Slightly increase size on hover */
+  }
+  
+  /* Left Side - Responsive Image */
+  .image-container {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    background: #0d0d0d;
+    border-radius: 12px;
+    padding: 20px;
+  }
+  
+  .image-container img {
+    max-width: 90%;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  /* Make image adjust on hover */
+  .image-container img:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Right Side - Form */
+  .form-container {
+    flex: 1;
+    padding: 40px;
+    text-align: left;
+    
+  }
+  
+  .login-form h2 {
+    font-size: 26px;
+    color: #ffffff;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+  
+  .login-form input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 16px;
+    border: 1px solid #333;
+    background: #2a2a2a;
+    color: #e0e0e0;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+  }
+  
+  .login-form input:focus {
+    border-color: #61dafb;
+  }
+  
+  .login-form button {
+    width: 100%;
+    padding: 12px;
+    background: #61dafb;
+    color: #000;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.2s ease;
+  }
+  
+  .login-form button:hover {
+    background: #48c6f0;
+  }
+  
+  .login-form p {
+    font-size: 14px;
+    color: #b0b0b0;
+    margin-top: 16px;
+  }
+  
+  .login-form .redirect-link {
+    color: #61dafb;
+    cursor: pointer;
+    font-weight: 500;
+  }
+  
+  .login-form .redirect-link:hover {
+    text-decoration: underline;
+  }
+  
